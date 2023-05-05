@@ -1,9 +1,11 @@
-import "./App.css";
-import CitiesDisplayed from "./CitiesDisplayed";
-import Footer from "./Footer";
-import Select from "./Select";
+import "./styles/App.css";
+import CitiesDisplayed from "./components/displayedCities/CitiesDisplayed.js";
+import Footer from "./components/footer/Footer.js";
+import Select from "./components/select/Select.js";
+import moment from "moment-timezone";
 
 function App() {
+  console.log(moment().tz("Europe/Warsaw").format("HH:mm:ss"));
   return (
     <div className="App">
       <div className="container">

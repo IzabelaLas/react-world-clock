@@ -14,7 +14,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 44px;
   padding-top: 50px;
   background: #cfcf0e;
   background: linear-gradient(to right, #cfcf0e 0%, #cf72c6 100%);
@@ -36,6 +36,11 @@ h2 {
   margin: 0 0 10px;
   font-size: 26px;
   color: #eca39d;
+}
+
+footer {
+  text-align: center;
+  margin-top: -40px;
 }
 
 .citySelect {
