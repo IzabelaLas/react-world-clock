@@ -1,7 +1,7 @@
 import "./styles/App.css";
 import CitiesDisplayed from "./components/displayedCities/CitiesDisplayed.js";
-import Footer from "./components/footer/Footer.js";
-import Select from "./components/select/Select.js";
+import Footer from "./components/Footer.js";
+import Select from "./components/Select.js";
 import moment from "moment-timezone";
 
 function App() {
