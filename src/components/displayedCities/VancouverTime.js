@@ -24,7 +24,7 @@ export default function VancouverTime() {
         </div>
         <div className="time d-flex">
           <div>{vancouverTime?.split(" ")[0]}</div>
-          <div>{vancouverTime?.split(" ")[1]}</div>
+          <div className="timeAmPM">{vancouverTime?.split(" ")[1]}</div>
         </div>
       </div>
     </div>

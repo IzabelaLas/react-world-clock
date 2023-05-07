@@ -22,7 +22,7 @@ export default function DubaiTime() {
         </div>
         <div className="time d-flex">
           <div>{dubaiTime?.split(" ")[0]}</div>
-          <div>{dubaiTime?.split(" ")[1]}</div>
+          <div className="timeAmPM">{dubaiTime?.split(" ")[1]}</div>
         </div>
       </div>
     </div>
