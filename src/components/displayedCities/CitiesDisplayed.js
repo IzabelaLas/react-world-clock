@@ -1,5 +1,5 @@
 import DubaiTime from "./DubaiTime";
-import VancouverTime from "./Vancouver";
+import VancouverTime from "./VancouverTime";
 import WarsawTime from "./WarsawTime";
 
 export default function CitiesDisplayed() {

@@ -70,6 +70,19 @@ footer {
   font-weight: 300;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.time div:first-child {
+  text-align: left;
+  min-width: 150px;
+}
+
+.time div:last-child {
+  text-align: right;
+}
+
 .date {
   color: #d9ba4a;
   opacity: 0.8;

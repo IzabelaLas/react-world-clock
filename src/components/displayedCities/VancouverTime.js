@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import moment from "moment-timezone";
 
 export default function VancouverTime() {
-  const [vancouverDate, setVancouverDate] = useState(false);
-  const [vancouverTime, setVancouverime] = useState(false);
+  const [vancouverDate, setVancouverDate] = useState(null);
+  const [vancouverTime, setVancouverime] = useState(null);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -22,7 +22,10 @@ export default function VancouverTime() {
           <h2 className="city">Vancouver</h2>
           <div className="date">{vancouverDate}</div>
         </div>
-        <div className="time">{vancouverTime}</div>
+        <div className="time d-flex">
+          <div>{vancouverTime?.split(" ")[0]}</div>
+          <div>{vancouverTime?.split(" ")[1]}</div>
+        </div>
       </div>
     </div>
   );

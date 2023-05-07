@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import moment from "moment-timezone";
 
 export default function DubaiTime() {
-  const [dubaiDate, setDubaiDate] = useState(false);
-  const [dubaiTime, setDubaiTime] = useState(false);
+  const [dubaiDate, setDubaiDate] = useState(null);
+  const [dubaiTime, setDubaiTime] = useState(null);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -20,7 +20,10 @@ export default function DubaiTime() {
           <h2 className="city">Dubai</h2>
           <div className="date">{dubaiDate}</div>
         </div>
-        <div className="time">{dubaiTime}</div>
+        <div className="time d-flex">
+          <div>{dubaiTime?.split(" ")[0]}</div>
+          <div>{dubaiTime?.split(" ")[1]}</div>
+        </div>
       </div>
     </div>
   );
